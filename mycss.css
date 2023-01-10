@@ -1,0 +1,37 @@
+
+.mycolorbg{
+    background-color: #FF8732;
+}
+#logo{
+    margin-bottom: 5%;
+}
+.mycolor{
+    background-color: #FFDDBD;
+}
+footer{
+    background-image: url(img/d23.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+footer>img{
+    height: 100%;
+    width: 20%;
+
+}
+/* #modal{
+    /* width: 200px; */
+    /* position: fixed;
+    top: 15%;
+    left: 25%; */
+   /* position: absolute;
+   top: 5%;
+   left: 0%; */
+   /* z-index: 11; */
+
+#modalimg{
+    width: 50%;
+    height: 20%;
+    /* object-fit: cover; */
+}

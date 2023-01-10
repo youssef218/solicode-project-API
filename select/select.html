@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/mycss.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>BURGER GOLD</title>
+  </head>
+  <body class="mycolorbg">
+    <!-- header -------------------------------------------------------------- -->
+    <header class="card text-bg-dark">
+      <img src="/img/d2.webp" class="card-img" alt="background" />
+      <div class="card-img-overlay">
+        <img src="/img/Frame 1.png" id="logo" class="w-25" alt="logo" />
+        <div class="row align-items-end">
+          <div class="col-0 col-md-2"></div>
+          <div class="col-3 col-md-2">
+            <button
+              class="rounded-pill px-md-4 py-md-2 border-0 fs-2 fw-bold mycolor"
+            >
+              <a href="/home/home.html" class="text-decoration-none text-dark">
+                Home</a
+              >
+            </button>
+          </div>
+          <div class="col justify-content-center">
+            <button
+              class="rounded-pill px-md-4 py-md-2 border-0 fs-2 fw-bold mycolor"
+            >
+              <a
+                href="/search/sherch.html"
+                class="text-decoration-none text-dark"
+              >
+                Search
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main ---------------------------------------------------------------- -->
+
+    <div class="d-grid gap-2 col-4 mx-auto">
+      <select name="Category" id="cat" onchange="afficher_Category(this.value)" class="py-2 mt-5 mb-2 border-0 rounded">
+        <option value="1" >Select Category</option>
+      </select>
+      <select name="area" id="area" onchange="afficher_Area(this.value)" class="py-2 mb-5 border-0 rounded">
+        <option value="1">Select Area</option>
+      </select>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-0" id="section"></div>
+    
+    <nav aria-label="..." class="d-flex justify-content-center">
+      <ul class="pagination pagination-lg" id="pages">
+      </ul>
+    </nav>
+    <!-- modal ================================================== -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+      id="modal"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" id="img"></div>
+          <div class="modal-body" id="modal"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer-------------------------------------------- -->
+
+    <footer class="mt-5 d-flex">
+      <img src="/img/Frame1.png" class="d-none d-md-block" alt="logo" />
+      <div class="container text-center h-100 mt-md-5">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <h3>Assistance</h3>
+            <p>212 6x x x xxxx</p>
+            <p>212 6x x x xxxx</p>
+            <p>XXXXX@gmail.com</p>
+          </div>
+          <div class="col">
+            <h3>About US</h3>
+            <p>suported by apprenant SOLicode</p>
+            <p>©Graphic support by <span class="text-primary">Samia</span></p>
+          </div>
+          <div class="col">
+            <h3><a href="#">HOME</a></h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/javascript.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
